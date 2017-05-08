@@ -6,6 +6,13 @@
  * ie: "cat" => "tac"
  */
 
+ function firstReverse (str){
+	return str.split('').reverse().join('');
+}
+// console.log(firstReverse("cat"));
+// console.log(firstReverse("dog"));
+
+
  /** Function: alphaOrder
  * The function will take the str parameter being passed in and
  * return the string in alphabetical order
@@ -13,6 +20,12 @@
  * @return {string} in alphabetical order
  * ie: "cake" => "acek"
  */
+
+function alphaOrder (str){
+	return str.split('').sort().join('');
+}
+// console.log(alphaOrder("cake"));
+// console.log(alphaOrder("cookie"));
 
  /** Function: vowelCount
  * The function will take the str parameter being passed in and
@@ -22,6 +35,25 @@
  * ie: "oreo" => 3
  */
 
+ function vowelCount(str) {
+   	var count=0;
+   	for(var i=0; i < str.length; i++){
+       if(str[i] === "a" || 
+          str[i] === "e" || 
+          str[i] === "i" ||
+          str[i] === "o" ||
+          str[i] === "u"){
+       count++;
+        }
+   
+    }
+    return count;
+}
+
+// console.log(vowelCount("oreo"));
+// console.log(vowelCount("nutter butter"));
+
+
  /** Function: timeConvert
  * The function will take the str parameter representing the amount of minutes being passed in and
  * return the number of hours and minutes. Seperate the number of hours
@@ -30,6 +62,18 @@
  * @return {string} as hours:minutes
  * ie: 68 => 1:8
  */
+ 
+ function timeConvert (str){
+ 	var hours = Math.floor(str / 60);
+ 	var minutes = str % 60;
+ 	return hours + ":" + minutes;
+ }
+
+ // console.log(timeConvert(90));
+ // console.log(timeConvert(130));
+
+
+
 
  /** Function: repeatString
  * The function will take in two parameters and repeat a given string (first argument)
@@ -39,6 +83,20 @@
  * @return {string} repeated num times
  * i.e repeatString("money", 3) => "moneymoneymoney".
  */
+
+function repeatString (str, num){
+	if (num < 0) {
+		return '" "';
+	} else {  
+	return str.repeat(num);
+	}
+}
+
+// console.log(repeatString("money", -5));
+// console.log(repeatString("money", 3));
+// console.log(repeatString("money", 5));
+// console.log(repeatString("money", -1));
+
 
 
 /**
