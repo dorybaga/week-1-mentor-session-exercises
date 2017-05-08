@@ -6,9 +6,15 @@
  * ie: "cat" => "tac"
  */
 
- function firstReverse (str){
-	return str.split('').reverse().join('');
-}
+var firstReverse = function (str){
+  return str.split('').reverse().join('');
+};
+
+console.log(firstReverse('cat'));
+
+// function firstReverse (str){
+//  	return str.split('').reverse().join('');
+// }
 // console.log(firstReverse("cat"));
 // console.log(firstReverse("dog"));
 
@@ -114,9 +120,9 @@ function repeatString (str, num){
  */
 
 module.exports = {
-    firstReverse: null,
-    alphaOrder: null,
-    vowelCount: null,
-    timeConvert: null,
-    repeatString: null
+    firstReverse: firstReverse,
+    alphaOrder: alphaOrder,
+    vowelCount: vowelCount,
+    timeConvert: timeConvert,
+    repeatString: repeatString
 }
