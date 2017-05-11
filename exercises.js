@@ -10,7 +10,7 @@ var firstReverse = function (str){
   return str.split('').reverse().join('');
 };
 
-console.log(firstReverse('cat'));
+// console.log(firstReverse('cat'));
 
 // function firstReverse (str){
 //  	return str.split('').reverse().join('');
@@ -27,9 +27,9 @@ console.log(firstReverse('cat'));
  * ie: "cake" => "acek"
  */
 
-function alphaOrder (str){
+var alphaOrder = function (str){
 	return str.split('').sort().join('');
-}
+};
 // console.log(alphaOrder("cake"));
 // console.log(alphaOrder("cookie"));
 
@@ -41,7 +41,7 @@ function alphaOrder (str){
  * ie: "oreo" => 3
  */
 
- function vowelCount(str) {
+ var vowelCount = function (str) {
    	var count=0;
    	for(var i=0; i < str.length; i++){
        if(str[i] === "a" || 
@@ -54,7 +54,7 @@ function alphaOrder (str){
    
     }
     return count;
-}
+};
 
 // console.log(vowelCount("oreo"));
 // console.log(vowelCount("nutter butter"));
@@ -69,11 +69,11 @@ function alphaOrder (str){
  * ie: 68 => 1:8
  */
  
- function timeConvert (str){
+ var timeConvert = function (str){
  	var hours = Math.floor(str / 60);
  	var minutes = str % 60;
  	return hours + ":" + minutes;
- }
+ };
 
  // console.log(timeConvert(90));
  // console.log(timeConvert(130));
@@ -90,13 +90,13 @@ function alphaOrder (str){
  * i.e repeatString("money", 3) => "moneymoneymoney".
  */
 
-function repeatString (str, num){
+var repeatString = function (str, num){
 	if (num < 0) {
 		return '" "';
 	} else {  
 	return str.repeat(num);
 	}
-}
+};
 
 // console.log(repeatString("money", -5));
 // console.log(repeatString("money", 3));
@@ -125,4 +125,4 @@ module.exports = {
     vowelCount: vowelCount,
     timeConvert: timeConvert,
     repeatString: repeatString
-}
+};
