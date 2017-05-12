@@ -11,7 +11,7 @@ var firstReverse = function (str){
   return str.split('').reverse().join('');
   } else {
     return null;
-  }
+    }
 };
 
 // console.log(firstReverse('cat'));
@@ -32,8 +32,13 @@ var firstReverse = function (str){
  */
 
 var alphaOrder = function (str){
+  if (typeof str === "string"){
 	return str.split('').sort().join('');
+  } else {
+    return null;
+    }
 };
+
 // console.log(alphaOrder("cake"));
 // console.log(alphaOrder("cookie"));
 
@@ -57,7 +62,11 @@ var alphaOrder = function (str){
         }
    
     }
+    if (typeof str === "string"){
     return count;
+    } else {
+      return null;
+      }
 };
 
 // console.log(vowelCount("oreo"));
