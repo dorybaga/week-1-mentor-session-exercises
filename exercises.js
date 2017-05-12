@@ -7,7 +7,11 @@
  */
 
 var firstReverse = function (str){
+  if (typeof str === "string"){
   return str.split('').reverse().join('');
+  } else {
+    return null;
+  }
 };
 
 // console.log(firstReverse('cat'));
